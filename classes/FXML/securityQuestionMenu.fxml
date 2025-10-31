@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane onMouseMoved="#updateLable" prefHeight="400.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.securityQuestionController">
+    <children>
+        <GridPane alignment="CENTER" layoutX="14.0" layoutY="15.0" prefHeight="370.0" prefWidth="322.0">
+            <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="114.4" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="75.6" minHeight="2.0" prefHeight="27.599999999999994" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="85.6" minHeight="0.0" prefHeight="24.599999999999994" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="125.6" minHeight="7.200000000000017" prefHeight="27.999984741210938" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="131.0000152587891" minHeight="10.0" prefHeight="27.399999999999977" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="140.39999999999998" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="152.39999999999998" minHeight="10.0" prefHeight="143.39999999999998" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label alignment="CENTER" text="Security Question " textAlignment="CENTER">
+                    <font>
+                        <Font size="28.0" />
+                    </font></Label>
+                <Label prefWidth="226.0" text="• 1-What is your father’s name ?" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="16.0" />
+                    </font></Label>
+            <Label text="• 2-What is your favourite color ?" textAlignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Label text="• 3-What was the name of your first pet ?" textAlignment="CENTER" GridPane.rowIndex="3">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="4">
+               <children>
+                  <CheckBox fx:id="box1" mnemonicParsing="false" text="1" textAlignment="CENTER" />
+                  <CheckBox fx:id="box2" mnemonicParsing="false" text="2" textAlignment="CENTER" />
+                  <CheckBox fx:id="box3" mnemonicParsing="false" text="3" textAlignment="CENTER" />
+               </children>
+            </HBox>
+            <TextField fx:id="answer" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="172.0" promptText="your answer" GridPane.rowIndex="5" />
+            <HBox alignment="CENTER" prefHeight="58.0" prefWidth="333.0" spacing="20.0" GridPane.rowIndex="6">
+               <children>
+                  <Label fx:id="captcha" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="130.0" prefWidth="200.0" text="Label" />
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+                     <children>
+                        <TextField fx:id="check" alignment="CENTER" prefHeight="69.0" prefWidth="100.0" promptText="capcha" />
+                        <HBox alignment="CENTER" prefHeight="71.0" prefWidth="100.0" spacing="5.0">
+                           <children>
+                              <Button mnemonicParsing="false" onMouseClicked="#updateLableA" prefHeight="26.0" prefWidth="39.0" text="CC" />
+                              <Button mnemonicParsing="false" onMouseClicked="#signup" prefHeight="22.0" prefWidth="56.0" text="sign up" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            </children>
+        </GridPane>
+    </children>
+
+</AnchorPane>

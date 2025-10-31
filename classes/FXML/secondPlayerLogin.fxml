@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.loginController">
+    <children>
+        <GridPane layoutX="23.0" layoutY="20.0" prefHeight="266.0" prefWidth="303.0">
+            <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="97.0" minHeight="2.0" prefHeight="97.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="52.0" minHeight="0.0" prefHeight="52.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="60.399984741210915" minHeight="7.200000000000017" prefHeight="44.79999999999998" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="103.39999999999998" minHeight="10.0" prefHeight="46.400000000000006" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="117.60000000000002" minHeight="10.0" prefHeight="49.20000000000002" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="112.0" prefWidth="193.0" text="login">
+                    <font>
+                        <Font name="System Bold Italic" size="38.0" />
+                    </font></Label>
+                <TextField fx:id="username" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="172.0" promptText="username" GridPane.rowIndex="1" />
+                <PasswordField fx:id="password" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="172.0" promptText="password" GridPane.rowIndex="2" />
+                <Hyperlink fx:id="forgotPassword" onMouseClicked="#forgotPass" text="forgot password" GridPane.rowIndex="4" />
+                <Button alignment="CENTER" mnemonicParsing="false" onMouseClicked="#login" text="login" GridPane.rowIndex="3" />
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>

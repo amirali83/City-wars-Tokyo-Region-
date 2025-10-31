@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane onMouseClicked="#updateee" prefHeight="350.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.settingMenuController">
+   <children>
+      <GridPane prefHeight="350.0" prefWidth="350.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="111.4" minHeight="10.0" prefHeight="81.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="229.0" minHeight="10.0" prefHeight="215.79999999999998" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="67.39999999999998" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Setting">
+               <font>
+                  <Font name="System Bold Italic" size="46.0" />
+               </font>
+            </Label>
+            <GridPane prefHeight="192.0" prefWidth="350.0" GridPane.rowIndex="1">
+              <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="111.0" minWidth="10.0" prefWidth="50.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="267.4" minWidth="10.0" prefWidth="226.2" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="97.99999999999997" minWidth="10.0" prefWidth="50.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="194.59998474121093" minHeight="10.0" prefHeight="194.59998474121093" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="86.4" minHeight="10.0" prefHeight="33.00001525878906" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button onMouseClicked="#prev" mnemonicParsing="false" text="prev" />
+                  <Button onMouseClicked="#next" mnemonicParsing="false" text="next" GridPane.columnIndex="2" />
+                  <Rectangle fx:id="songImage" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="160.0" stroke="BLACK" strokeType="INSIDE" width="160.0" GridPane.columnIndex="1" />
+                  <Slider onMouseReleased="#update" fx:id="soundVolume" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+            <Button onMouseClicked="#back" mnemonicParsing="false" text="back" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

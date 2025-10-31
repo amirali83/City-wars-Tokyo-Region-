@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="400" maxWidth="350" minHeight="400" minWidth="350" prefHeight="400.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.pofrileController">
+    <children>
+        <GridPane layoutX="23.0" layoutY="20.0" prefHeight="320.0" prefWidth="303.0">
+            <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+            <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.rowIndex="1">
+               <children>
+                  <TextField fx:id="newUsername" alignment="CENTER" promptText="new username" />
+                  <Button mnemonicParsing="false" text="Change" onMouseClicked="#changeUsername" />
+               </children></HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.rowIndex="2">
+               <children>
+                  <TextField fx:id="newNickname" alignment="CENTER" promptText="new nickname" />
+                  <Button mnemonicParsing="false" text="Change" onMouseClicked="#changeNickname"/>
+               </children></HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.rowIndex="3">
+               <children>
+                  <TextField fx:id="newPassword" alignment="CENTER" promptText="new password" />
+                  <Button mnemonicParsing="false" text="Change" onMouseClicked="#changePassword"/>
+               </children></HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.rowIndex="4">
+               <children>
+                  <TextField fx:id="newEmail" alignment="CENTER" promptText="new email" />
+                  <Button mnemonicParsing="false" text="Change" onMouseClicked="#changeEmail"/>
+               </children></HBox>
+            <Button mnemonicParsing="false" text="back" GridPane.rowIndex="5" onMouseClicked="#back"/>
+            <Label text="Profile Menu">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font>
+            </Label>
+         </children>
+        </GridPane>
+    </children>
+
+</AnchorPane>

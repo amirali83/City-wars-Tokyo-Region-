@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane onKeyPressed="#reset" onMouseMoved="#bringUp" prefHeight="600.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.playMenuController">
+   <children>
+      <GridPane prefHeight="600.0" prefWidth="1400.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="25.0" minWidth="25.0" prefWidth="25.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="1254.4" minWidth="1350.0" prefWidth="1350.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="25.0" minWidth="25.0" prefWidth="25.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Rectangle fx:id="timeline00" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin00" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                  <Rectangle fx:id="timeline01" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin01" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="1" />
+                  <Rectangle fx:id="timeline06" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin06" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="6" />
+                  <Rectangle fx:id="timeline10" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin10" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.rowIndex="1" />
+                  <Rectangle fx:id="timeline11" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin11" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Rectangle fx:id="timeline03" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin03" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="3" />
+                  <Rectangle fx:id="timeline13" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin13" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <Rectangle fx:id="timeline04" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin04" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="4" />
+                  <Rectangle fx:id="timeline14" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin14" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                  <Rectangle fx:id="timeline05" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin05" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="5" />
+                  <Rectangle fx:id="timeline15" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin15" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                  <Rectangle fx:id="timeline02" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin02" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="2" />
+                  <Rectangle fx:id="timeline12" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin12" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Rectangle fx:id="timeline07" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin07" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="7" />
+                  <Rectangle fx:id="timeline08" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin08" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="8" />
+                  <Rectangle fx:id="timeline09" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin09" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="9" />
+                  <Rectangle fx:id="timeline010" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin010" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="10" />
+                  <Rectangle fx:id="timeline011" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin011" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="11" />
+                  <Rectangle fx:id="timeline012" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin012" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="12" />
+                  <Rectangle fx:id="timeline013" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin013" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="13" />
+                  <Rectangle fx:id="timeline014" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin014" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="14" />
+                  <Rectangle fx:id="timeline015" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin015" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="15" />
+                  <Rectangle fx:id="timeline016" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin016" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="16" />
+                  <Rectangle fx:id="timeline017" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin017" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="17" />
+                  <Rectangle fx:id="timeline018" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin018" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="18" />
+                  <Rectangle fx:id="timeline019" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin019" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="19" />
+                  <Rectangle fx:id="timeline020" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin020" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="20" />
+                  <Rectangle fx:id="timeline021" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin021" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="21" />
+                  <Rectangle fx:id="timeline022" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin022" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="22" />
+                  <Rectangle fx:id="timeline023" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin023" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="23" />
+                  <Rectangle fx:id="timeline16" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin16" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                  <Rectangle fx:id="timeline17" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin17" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+                  <Rectangle fx:id="timeline18" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin18" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+                  <Rectangle fx:id="timeline19" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin19" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+                  <Rectangle fx:id="timeline110" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin110" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="10" GridPane.rowIndex="1" />
+                  <Rectangle fx:id="timeline111" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin111" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="11" GridPane.rowIndex="1" />
+                  <Rectangle fx:id="timeline112" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin112" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="12" GridPane.rowIndex="1" />
+                  <Rectangle fx:id="timeline113" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin113" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="13" GridPane.rowIndex="1" />
+                  <Rectangle fx:id="timeline114" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin114" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="14" GridPane.rowIndex="1" />
+                  <Rectangle fx:id="timeline115" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin115" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="15" GridPane.rowIndex="1" />
+                  <Rectangle fx:id="timeline116" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin116" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="16" GridPane.rowIndex="1" />
+                  <Rectangle fx:id="timeline117" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin117" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="17" GridPane.rowIndex="1" />
+                  <Rectangle fx:id="timeline118" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin118" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="18" GridPane.rowIndex="1" />
+                  <Rectangle fx:id="timeline119" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin119" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="19" GridPane.rowIndex="1" />
+                  <Rectangle fx:id="timeline120" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin120" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="20" GridPane.rowIndex="1" />
+                  <Rectangle fx:id="timeline121" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin121" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="21" GridPane.rowIndex="1" />
+                  <Rectangle fx:id="timeline122" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin122" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="22" GridPane.rowIndex="1" />
+                  <Rectangle fx:id="timeline123" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" onMouseClicked="#placeCardin123" stroke="BLACK" strokeType="INSIDE" width="50.0" GridPane.columnIndex="23" GridPane.rowIndex="1" />
+                  <Label fx:id="roundLeftP2" text="Label">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font></Label>
+                  <Label fx:id="roundLeftP1" text="Label" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font></Label>
+                  <Label fx:id="DamageP2" text="Label" GridPane.columnIndex="23">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font></Label>
+                  <Label fx:id="DamageP1" text="Label" GridPane.columnIndex="23" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font></Label>
+               </children>
+            </GridPane>
+            <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="173.0" prefWidth="1350.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Rectangle fx:id="player10" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="150.0" onMouseClicked="#choseCardToPlay10" onMouseMoved="#showCard10Property" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="1" />
+                  <Rectangle fx:id="player14" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="150.0" onMouseClicked="#choseCardToPlay14" onMouseMoved="#showCard14Property" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="5" />
+                  <Rectangle fx:id="player13" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="150.0" onMouseClicked="#choseCardToPlay13" onMouseMoved="#showCard13Property" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="4" />
+                  <Rectangle fx:id="player12" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="150.0" onMouseClicked="#choseCardToPlay12" onMouseMoved="#showCard12Property" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="3" />
+                  <Rectangle fx:id="player11" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="150.0" onMouseClicked="#choseCardToPlay11" onMouseMoved="#showCard11Property" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="2" />
+                  <Rectangle fx:id="player15" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="150.0" onMouseClicked="#choseCardToPlay15" onMouseMoved="#showCard15Property" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="6" />
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="player1name" alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="100.0" text="Label" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold Italic" size="26.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="player1live" alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="100.0" text="Label" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold Italic" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.columnIndex="7">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text fx:id="ShowCardInformation" textAlignment="CENTER" />
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+            <GridPane GridPane.columnIndex="1">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Rectangle fx:id="player20" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="150.0" onMouseClicked="#choseCardToPlay20" onMouseMoved="#showCard20Property" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="6" />
+                  <Rectangle fx:id="player25" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="150.0" onMouseClicked="#choseCardToPlay25" onMouseMoved="#showCard25Property" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="1" />
+                  <Rectangle fx:id="player24" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="150.0" onMouseClicked="#choseCardToPlay24" onMouseMoved="#showCard24Property" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="2" />
+                  <Rectangle fx:id="player23" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="150.0" onMouseClicked="#choseCardToPlay23" onMouseMoved="#showCard23Property" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="3" />
+                  <Rectangle fx:id="player22" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="150.0" onMouseClicked="#choseCardToPlay22" onMouseMoved="#showCard22Property" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="4" />
+                  <Rectangle fx:id="player21" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="150.0" onMouseClicked="#choseCardToPlay21" onMouseMoved="#showCard21Property" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="5" />
+                  <GridPane GridPane.columnIndex="7">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="player2live" alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="100.0" text="Label" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold Italic" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="player2name" alignment="CENTER" prefHeight="60.0" prefWidth="100.0" text="Label">
+                           <font>
+                              <Font name="System Bold Italic" size="26.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

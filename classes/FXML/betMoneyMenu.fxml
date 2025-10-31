@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="350.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.betMoneyMenuController">
+   <children>
+      <GridPane prefHeight="350.0" prefWidth="350.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="227.4" minHeight="10.0" prefHeight="161.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="196.4" minHeight="10.0" prefHeight="128.60000000000002" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="196.4" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" prefHeight="203.0" prefWidth="349.0" text="Place your Bets">
+               <font>
+                  <Font name="System Bold Italic" size="46.0" />
+               </font>
+            </Label>
+            <TextField fx:id="bet" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="69.0" prefWidth="186.0" promptText="place your ber" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onMouseClicked="#next" text="Contoniue" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

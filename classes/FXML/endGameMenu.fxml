@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane onMouseMoved="#bringUp" prefHeight="350.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.endGameMenuController">
+   <children>
+      <GridPane layoutY="1.0" prefHeight="350.0" prefWidth="350.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="282.40001525878904" minHeight="10.0" prefHeight="154.39999237060547" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="282.40001525878904" minHeight="10.0" prefHeight="78.40000762939454" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="257.4" minHeight="10.0" prefHeight="175.5999923706055" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <HBox alignment="CENTER" prefHeight="134.0" prefWidth="350.0" spacing="40.0" GridPane.rowIndex="2">
+               <children>
+                  <Button mnemonicParsing="false" onMouseClicked="#playAgain" prefHeight="65.0" prefWidth="110.0" text="Rematch" />
+                  <Button mnemonicParsing="false" onMouseClicked="#quit" prefHeight="65.0" prefWidth="110.0" text="Quit" />
+               </children>
+            </HBox>
+            <Label fx:id="winner" alignment="CENTER" contentDisplay="CENTER" prefHeight="170.0" prefWidth="338.0" text="player 1 won" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="52.0" />
+               </font>
+            </Label>
+            <Label fx:id="trophy" alignment="CENTER" prefHeight="41.0" prefWidth="272.0" text="Label" GridPane.rowIndex="1">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
