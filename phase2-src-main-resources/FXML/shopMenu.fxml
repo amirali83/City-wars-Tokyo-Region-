@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane onMouseMoved="#update" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.shopController">
+    <children>
+        <GridPane alignment="CENTER" prefHeight="450.0" prefWidth="600.0">
+            <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="103.39999999999998" minHeight="20.0" prefHeight="41.8" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="385.6" minHeight="40.0" prefHeight="371.8" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="117.60000000000002" minHeight="10.0" prefHeight="28.19999999999999" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+            <Label text="Shop Menu">
+               <font>
+                  <Font name="System Bold Italic" size="38.0" />
+               </font></Label>
+            <GridPane prefHeight="225.0" prefWidth="693.0" GridPane.rowIndex="1">
+              <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="284.2" minWidth="10.0" prefWidth="256.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="269.8" minWidth="10.0" prefWidth="256.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Rectangle fx:id="card3" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" onMouseClicked="#selectCard3" stroke="BLACK" strokeType="INSIDE" width="80.0" GridPane.rowIndex="1" />
+                        <Rectangle fx:id="card3lock" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" onMouseClicked="#selectCard3" stroke="BLACK" strokeType="INSIDE" width="80.0" GridPane.rowIndex="1" />
+                         <Text fx:id="card3details" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+                  <Button mnemonicParsing="false" onMouseClicked="#pagebef" text="prev" GridPane.rowIndex="1" />
+                  <Button mnemonicParsing="false" onMouseClicked="#pageaf" text="next" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <GridPane GridPane.columnIndex="1">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Rectangle fx:id="card1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" onMouseClicked="#selectCard1" stroke="BLACK" strokeType="INSIDE" width="80.0" GridPane.rowIndex="1" />
+                        <Rectangle fx:id="card1lock" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" onMouseClicked="#selectCard1" stroke="BLACK" strokeType="INSIDE" width="80.0" GridPane.rowIndex="1" />
+                         <Text fx:id="card1details" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Rectangle fx:id="card5" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" onMouseClicked="#selectCard5" stroke="BLACK" strokeType="INSIDE" width="80.0" GridPane.rowIndex="1" />
+                        <Rectangle fx:id="card5lock" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" onMouseClicked="#selectCard5" stroke="BLACK" strokeType="INSIDE" width="80.0" GridPane.rowIndex="1" />
+                         <Text fx:id="card5details" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.columnIndex="2">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Rectangle fx:id="card2" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" onMouseClicked="#selectCard2" stroke="BLACK" strokeType="INSIDE" width="80.0" GridPane.rowIndex="1" />
+                        <Rectangle fx:id="card2lock" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" onMouseClicked="#selectCard2" stroke="BLACK" strokeType="INSIDE" width="80.0" GridPane.rowIndex="1" />
+                         <Text fx:id="card2details" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.columnIndex="2" GridPane.rowIndex="1">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Rectangle fx:id="card4" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" onMouseClicked="#selectCard4" stroke="BLACK" strokeType="INSIDE" width="80.0" GridPane.rowIndex="1" />
+                        <Rectangle fx:id="card4lock" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" onMouseClicked="#selectCard4" stroke="BLACK" strokeType="INSIDE" width="80.0" GridPane.rowIndex="1" />
+                         <Text fx:id="card4details" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.columnIndex="2" GridPane.rowIndex="2">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Rectangle fx:id="card6" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" onMouseClicked="#selectCard6" stroke="BLACK" strokeType="INSIDE" width="80.0" GridPane.rowIndex="1" />
+                        <Rectangle fx:id="card6lock" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" onMouseClicked="#selectCard6" stroke="BLACK" strokeType="INSIDE" width="80.0" GridPane.rowIndex="1" />
+                         <Text fx:id="card6details" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+            <GridPane GridPane.rowIndex="2">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="196.0" minWidth="10.0" prefWidth="82.2" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="518.8" minWidth="10.0" prefWidth="455.6" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="518.8" minWidth="10.0" prefWidth="87.60000000000002" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button mnemonicParsing="false" onMouseClicked="#back" text="back" />
+                  <Button mnemonicParsing="false" onMouseClicked="#buy" text="buy/update" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+            </children>
+        </GridPane>
+    </children>
+
+</AnchorPane>

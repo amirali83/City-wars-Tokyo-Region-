@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane onMouseMoved="#update" prefHeight="366.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.gameHistoryController">
+   <children>
+      <GridPane prefHeight="366.0" prefWidth="601.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="340.3999847412109" minHeight="10.0" prefHeight="329.3999847412109" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="174.4" minHeight="10.0" prefHeight="37.4000152587891" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0" GridPane.rowIndex="1">
+               <children>
+                  <Button mnemonicParsing="false" onMouseClicked="#prev" text="prev" />
+                  <Button mnemonicParsing="false" onMouseClicked="#back" text="back" />
+                  <Button mnemonicParsing="false" onMouseClicked="#next" text="next" />
+               </children>
+            </HBox>
+            <TableView fx:id="Table" prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                  <TableColumn prefWidth="65.20001524686813" resizable="false" text="number" />
+                <TableColumn prefWidth="160.39996337890625" resizable="false" text="Date">
+                     <columns>
+                        <TableColumn prefWidth="75.0" resizable="false" text="day" />
+                        <TableColumn prefWidth="75.0" resizable="false" text="time" />
+                     </columns>
+                  </TableColumn>
+                <TableColumn prefWidth="75.0" resizable="false" text="Win\Los" />
+                  <TableColumn prefWidth="168.79998779296875" resizable="false" text="Opponent name" />
+                  <TableColumn prefWidth="80.79998779296875" resizable="false" text="Level" />
+                  <TableColumn prefWidth="57.79998779296875" resizable="false" text="Trophy" />
+              </columns>
+            </TableView>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

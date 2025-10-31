@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane onMouseMoved="#update" prefHeight="400.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.mainController">
+   <children>
+      <GridPane alignment="CENTER" layoutX="2.0" prefHeight="400.0" prefWidth="350.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="45.4" minHeight="10.0" prefHeight="23.6" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="96.6" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onMouseClicked="#startGame" prefHeight="45.0" prefWidth="140.0" text="Start game" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#Shop" prefHeight="45.0" prefWidth="140.0" text="Shop" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#GameHistory" prefHeight="45.0" prefWidth="140.0" text="Game History" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#Profile" prefHeight="45.0" prefWidth="140.0" text="Profile" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onMouseClicked="#Setting" prefHeight="45.0" prefWidth="140.0" text="Setting" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onMouseClicked="#Logout" prefHeight="45.0" prefWidth="140.0" text="Log out" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Button>
+            <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="346.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="79.4" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="165.00000381469727" minWidth="10.0" prefWidth="89.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="251.2" minWidth="10.0" prefWidth="50.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="12.399999999999999" minHeight="10.0" prefHeight="12.399999999999999" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="12.399999999999999" minHeight="10.0" prefHeight="12.399999999999999" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="Coins" prefHeight="18.0" prefWidth="139.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="Level" prefHeight="18.0" prefWidth="126.0" text="Label" GridPane.rowIndex="1" />
+                  <Label fx:id="HP" prefHeight="18.0" prefWidth="118.0" text="Label" />
+                  <Label fx:id="XP" prefHeight="18.0" prefWidth="152.0" text="Label" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

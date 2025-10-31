@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane onMouseMoved="#update" prefHeight="350.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.levelUpMenuController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="350.0" prefWidth="350.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="52.0" prefWidth="350.0" text="congratulations">
+               <font>
+                  <Font name="System Bold Italic" size="44.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="76.0" prefWidth="357.0" text="LEVELED UP" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="43.0" />
+               </font>
+            </Label>
+            <Label fx:id="trophy" alignment="CENTER" prefHeight="104.0" prefWidth="201.0" text="Tropy">
+               <font>
+                  <Font size="41.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onMouseClicked="#mainMenu" text="continue" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
